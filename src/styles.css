@@ -1,0 +1,278 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: rgb(42, 22, 0);
+	font-family: Poppins;
+}
+
+body {
+	background-color: rgb(244, 238, 230);
+	margin: 0;
+	padding: 0;
+	background-image: linear-gradient(to bottom right,rgb(254, 250, 224), rgb(164, 180, 101));
+	padding-bottom: 1000px;
+	padding-top: 80px;
+	padding-left: 350px;
+	padding-right: 200px;
+}
+
+
+.header-section {
+	background-color: rgb(98, 111, 71);
+	color: rgb(42, 22, 0);
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	padding: 10px;
+	padding-left: 200px;
+	padding-right: 200px;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+
+.left-section {
+	display: flex;
+	direction: column;
+	margin-top: 10px;
+}
+
+.menu-icon {
+	height: 30px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+.logo-name {
+	font-size: 30px;
+	padding: 0;
+	text-align: center;
+	font-weight: 600;
+}
+.logo-name p {
+	cursor: pointer;
+}
+
+.middle-section {
+	/* background-color: red; */
+	width: 400px;
+	display: flex;
+	direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	box-shadow: 0 0 5px rgba(0,0,0,0.7);
+	border-radius: 3px;
+
+}
+.search-box {
+	/* padding-top: 10px; */
+	display: flex;
+	align-items: center;
+	border: none;
+}
+.search-box-input {
+	width: 300px;
+	height: 30px;
+	margin: 0;
+	padding-left: 12px;
+	border: 2px solid rgb(42, 22, 0);
+	border-radius: 8px;
+	align-items: baseline;
+}
+.search-enter {
+	/* background-color: rgb(254, 250, 224); */
+	/* margin: 10px; */
+}
+.search-enter-submit {
+	background-color: rgb(254, 250, 224);
+	border: 2px solid rgb(42, 22, 0);
+	border-radius: 4px;
+	height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	cursor: pointer;
+	transition: 0.25s;
+}
+.search-enter-submit:hover {
+	background-color: rgb(42, 22, 0);
+	color: rgb(254, 250, 224);
+}
+.search-enter-submit:active {
+	margin-top: 8px;
+}
+
+
+.login-button {
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 30px;
+	border: 2px solid rgb(42, 22, 0);
+	border-radius: 4px;
+	background-color: rgb(254, 250, 224);
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: 0.25s;
+}
+.login-button:hover {
+	background-color: rgb(42, 22, 0);
+	color: rgb(254, 250, 224);
+	transition: 0.15s;
+}
+.login-button:active {
+	margin-top: 8px;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background-color: burlywood;
+	width: 200px;
+	z-index: 1;
+	color: rgb(42, 22, 0);
+}
+
+.nav-list {
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+.sort-buttons {
+	margin-top: 10px;
+}
+
+.sort-button {
+	background-color: rgb(254, 250, 224);
+	font-size: 16px;
+	padding: 5px;
+	margin-top: 10px;
+	cursor: pointer;
+	border: 1px solid rgb(42, 22, 0);
+	border-radius: 4px;
+}
+.sort-button:hover {
+	background-color: rgb(42, 22, 0);
+	color: rgb(254, 250, 224);
+	transition: 0.25s;
+}
+.sort-button:active {
+	background-color: rgb(102, 82, 80);
+	margin-left: 10px;
+}
+
+
+.heading2 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 70px;
+	border-bottom: 1px solid rgb(42, 22, 0);
+	margin-bottom: 30px;
+}
+
+.switch {
+	display: flex;
+	align-items: center;
+}
+.swicth-button {
+	background-color: rgb(254, 250, 224);
+	border: 2px solid rgb(42, 22, 0);
+	border-radius: 4px;
+	font-size: 16px;
+	width: 200px;
+	padding: 5px 0;
+	transition: 0.25s;
+	cursor: pointer;
+}
+.swicth-button:hover {
+	background-color: rgb(42, 22, 0);
+	color: rgb(254, 250, 224);
+}
+.swicth-button:active {
+	margin-top: 8px;
+}
+.list-icon, .table-icon {
+	width: 40px;
+	padding-top: 3px;
+	margin-right: 8px;
+}
+.table-icon {
+	width: 32px;
+}
+#row-view .hidden {
+	display: none;
+}
+
+table {
+	background-color: rgb(204, 220, 141);
+	border-radius: 10px;
+	border-color: rgb(42, 22, 0);
+	margin-left: 75px;
+	border-collapse: collapse;
+}
+table thead {
+	background-color: rgb(98, 111, 71);
+}
+table thead th {
+	color: rgb(254, 250, 224);
+	min-width: 150px;
+}
+
+table tr {
+	line-height: 30px;
+}
+
+/* link to a source with code (changed a little bit): https://stackoverflow.com/questions/1257430/how-can-i-apply-a-border-only-inside-a-table */
+table td, table th {
+  border: 1px solid black;
+}
+table tr:first-child th {
+  border-top: 0;
+}
+table tr:last-child td {
+  border-bottom: 0;
+}
+table tr td:first-child,
+table tr th:first-child {
+  border-left: 0;
+	border-top-left-radius: 10px;
+}
+table tr td:last-child,
+table tr th:last-child {
+  border-right: 0;
+	border-top-right-radius: 10px;
+}
+/* end of source */
+
+
+
+.hidden {
+	display: none;
+}
+
+
+
+
+#row-view .poster-img {
+	height: 300px;
+	margin-right: 20px;
+	/* object-fit: cover; */
+}
+.film-data {
+	flex: 1;
+}
+
+.film-row {
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+	border-bottom: 2px solid rgb(42, 22, 0);
+	padding-bottom: 20px;
+}
