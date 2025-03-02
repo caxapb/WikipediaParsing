@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <td style="text-align: center;">${film.year}</td>
                 <td style="text-align: center;">${film.director.join(', ')}</td>
                 <td style="text-align: center;">$${film.revenue.toLocaleString()}</td>
-                <td style="padding-left:10px;">${film.country}</td>
+                <td style="padding-left:10px;">${film.country.join(', ')}</td>
             `;
             tableBody.appendChild(row);
         });
@@ -47,9 +47,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div class="film-data">
                     <h1>${film.title}</h2>
                     <p><strong>Year:</strong> ${film.year}</p>
-                    <p><strong>Director:</strong> ${film.director}</p>
+                    <p><strong>Director:</strong> ${film.director.join(', ')}</p>
                     <p><strong>Revenue</strong> (millions): $${film.revenue.toLocaleString()}</p>
-                    <p><strong>Country:</strong> ${film.country}</p>
+                    <p><strong>Country:</strong> ${film.country.join(', ')}</p>
                 </div>
             `;
             rowBody.appendChild(row);

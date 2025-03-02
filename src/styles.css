@@ -81,10 +81,7 @@ body {
 	border-radius: 8px;
 	align-items: baseline;
 }
-.search-enter {
-	/* background-color: rgb(254, 250, 224); */
-	/* margin: 10px; */
-}
+
 .search-enter-submit {
 	background-color: rgb(254, 250, 224);
 	border: 2px solid rgb(42, 22, 0);
