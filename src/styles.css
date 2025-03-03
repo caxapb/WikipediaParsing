@@ -145,23 +145,102 @@ nav {
 	margin-top: 10px;
 }
 
-.sort-button {
+.sort-button,
+.stats-button {
 	background-color: rgb(254, 250, 224);
 	font-size: 16px;
 	padding: 5px;
-	margin-top: 10px;
+	/* margin-top: 10px; */
+	margin-bottom: 10px;
 	cursor: pointer;
 	border: 1px solid rgb(42, 22, 0);
 	border-radius: 4px;
 }
-.sort-button:hover {
+.sort-button:hover,
+.stats-button:hover {
 	background-color: rgb(42, 22, 0);
 	color: rgb(254, 250, 224);
 	transition: 0.25s;
 }
-.sort-button:active {
+.sort-button:active,
+.stats-button:active {
 	background-color: rgb(102, 82, 80);
 	margin-left: 10px;
+}
+
+
+.stats {
+	display: none;
+	position: fixed;
+	z-index: 200;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	/* left: 20%;
+	top: 20%;
+	width: 60%;
+	height: 50%; */
+	backdrop-filter: blur(5px);
+}
+
+.stats-content {
+	position: relative;
+	background-color: white;
+	margin-top: 120px;
+	margin-left: 350px;
+	padding: 30px;
+	border-radius: 20px;
+	max-width: 800px;
+}
+
+#close {
+	position: absolute;
+	right: 10px;
+	top: 3px;
+	font-size: 50px;
+	cursor: pointer;
+}
+#close:hover {
+	color: red;
+}
+
+#plot {
+	height: 400px;
+	position: relative;
+}
+.circle {
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background-color: rgba(0,0,0,0);
+	border: 2px solid blue;
+	border-radius: 100%;
+	cursor: pointer;
+}
+.yearX {
+	position: absolute;
+	font-size: 11px;
+}
+.yearY {
+	position: absolute;
+	font-size: 14px;
+}
+
+.tooltip {
+	position: absolute;
+	background-color: white;
+	padding: 5px;
+	border: 1px solid rgb(200,200,200);
+	border-radius: 5px;
+	display: none;
+	z-index: 150;
+}
+#plot {
+	width: 100%;
+	position: relative;
+	border-left: 2px solid black;
+	border-bottom: 2px solid black;
 }
 
 
@@ -253,8 +332,6 @@ table tr th:last-child {
 .hidden {
 	display: none;
 }
-
-
 
 
 #row-view .poster-img {

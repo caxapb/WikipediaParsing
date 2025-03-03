@@ -48,20 +48,32 @@
       <ul>
         <li>Switch to another View (click the corresponding button)</li>
         <li>Find films by name (fast search)</li>
-        <li>Sort by revenue or year (click here)</li>
+        <li>Sort by revenue or year (click here)
+          <div class="sort-buttons">
+            <button class="sort-button" id="sort-revenue">Sort by revenue</button>
+            <button class="sort-button" id="sort-year">Sort by year</button>
+          </div>
+        </li>
+        <li>
+          See statistics over years
+          <div class="stats-div">
+            <button class="stats-button" id="see-stats"> See stats</button>
+          </div>
+        </li>
       </ul>
 
-    <div class="sort-buttons">
-      <button class="sort-button" id="sort-revenue">Sort by revenue</button>
-      <button class="sort-button" id="sort-year">Sort by year</button>
+    <div id="stats" class="stats hidden">
+      <div class="stats-content">
+          <span id="close">&times;</span>
+          <h2>Film Distribution Over Years</h2>
+          <div id="plot"></div>
+      </div>
     </div>
     </div>
   </nav>
 
 
   <div class="heading2">
-      <!-- <button id="sort-year">Sort by Year</button>
-      <button id="sort-revenue">Sort by Revenue</button> -->
       <div class="declaration">
         <h1>Films</h1>
       </div>
